@@ -1,0 +1,26 @@
+.NewUser {
+  padding: 12% 0;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 5px;
+  margin: 25px;
+}
+div {
+  padding: 20px 0;
+}
+label {
+  margin: 0 10px;
+}
+
+#Submit_Request {
+  width: 20%;
+  height: 50%;
+  color: white;
+  background-color: coral;
+  border-radius: 5px;
+  font-size: 26px;
+  cursor: pointer;
+}
+#Submit_Request:hover {
+  background-color: 0 5px #666;
+}

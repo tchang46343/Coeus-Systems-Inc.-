@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+.navContent {
+  display: flex;
+}
+.AppTitle {
+  border: 5px solid black;
+  flex: 2;
+  margin: 20px;
+  padding: 30px;
+}
+.Login {
+  border: 5px solid black;
+  flex: 1;
+  margin: 20px;
+  text-align: center;
+  padding: 5px 0;
+}
+.Login label,
+#hamburger {
+  display: none;
+}
+.Login ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.Login ul li {
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+}
+.Login ul li p {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.Login ul li p::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  background-color: white;
+  top: 0;
+}
+.Login ul li p:hover::before {
+  width: 100%;
+  transition: all ease-in-out 300ms;
+}
+
+@media screen and (max-width: 826px) {
+  .Login label {
+    display: inline-block;
+    color: black;
+    font-style: normal;
+    font-size: 30px;
+    padding: 10px;
+  }
+  .Login ul li {
+    display: block;
+  }
+  .Login ul li {
+    border-top: 1px solid black;
+  }
+  .Login ul {
+    display: none;
+  }
+  .Login input:checked ~ ul {
+    display: block;
+  }
+}
