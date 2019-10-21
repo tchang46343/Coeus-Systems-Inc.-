@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import "./HomeScreen.css";
 import UserNav from "./UserNavBar";
 import UserOptions from "./UserOptions";
-export default class UserHomeScreen extends React.Component {
+export default class UserHomeScreen extends Component {
   render() {
     return (
       <div className="UserHomeScreen">

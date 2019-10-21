@@ -1,0 +1,32 @@
+.addNewPart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid 2px black;
+  margin: 25px;
+  border-radius: 5px;
+  padding: 25px;
+  font-size: 26px;
+}
+
+input {
+  margin: 20px 0;
+  height: 50px;
+  width: 20%;
+  border-radius: 5px;
+}
+
+.Report {
+  height: 50px;
+  width: 20%;
+  text-align: center;
+}
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: solid 2px black;
+  margin: 25px;
+  border-radius: 5px;
+  padding: 25px;
+}

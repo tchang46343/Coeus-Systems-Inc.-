@@ -13,3 +13,11 @@ button {
   font-size: 16px;
   font-display: bold;
 }
+button:hover {
+  background-color: powderblue;
+  transition: background-color 0.5s;
+}
+.UserLinks {
+  color: black;
+  text-decoration: none;
+}
