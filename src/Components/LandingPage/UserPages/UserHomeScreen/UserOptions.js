@@ -21,7 +21,11 @@ export default class UserOptions extends React.Component {
             DELETE Inventory Data
           </Link>
         </button>
-        <button> UPDATE Inventory Data</button>
+        <button>
+          <Link to="/updatedata" className="UserLinks">
+            UPDATE Inventory Data
+          </Link>
+        </button>
       </div>
     );
   }

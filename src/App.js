@@ -7,6 +7,7 @@ import NotFound from "./Components/LandingPage/NotFoundPage";
 import GetData from "./Components/LandingPage/UserPages/UserChanges/Get";
 import PostData from "./Components/LandingPage/UserPages/UserChanges/Post";
 import DeleteData from "./Components/LandingPage/UserPages/UserChanges/Delete";
+import UpdateData from "./Components/LandingPage/UserPages/UserChanges/Update";
 
 export default class LandingPage extends React.Component {
   render() {
@@ -19,6 +20,7 @@ export default class LandingPage extends React.Component {
           <Route path="/getdata" component={GetData} />
           <Route path="/postdata" component={PostData} />
           <Route path="/deletedata" component={DeleteData} />
+          <Route path="/updatedata" component={UpdateData} />
           <Route component={NotFound} />
         </Switch>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./UserNavBar.css";
 
 export default class NavBar extends React.Component {
@@ -12,9 +13,7 @@ export default class NavBar extends React.Component {
             <input type="checkbox" id="hamburger" />
             <ul>
               <li>
-                <a class="nav-link scroll" href="#Home">
-                  Home
-                </a>
+                <Link to="/userpage"> Home </Link>
               </li>
               <li>
                 <a className="nav-link scroll" href="#Services">
@@ -23,9 +22,7 @@ export default class NavBar extends React.Component {
               </li>
 
               <li>
-                <a className="SIGN OUT" href="#Login">
-                  Sign Out
-                </a>
+                <Link to="/"> Sign Out </Link>
               </li>
             </ul>
           </div>
