@@ -4,20 +4,43 @@
 .UserOptions {
   text-align: center;
 }
-button {
-  margin: 50px;
-  padding: 25px;
-  cursor: pointer;
-  border-radius: 5px;
-  border: solid 2px black;
-  font-size: 16px;
-  font-display: bold;
-}
 button:hover {
   background-color: powderblue;
   transition: background-color 0.5s;
 }
-.UserLinks {
-  color: black;
-  text-decoration: none;
+
+@media screen and (min-width: 891px) {
+  .UserLink {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border: solid 2px black;
+    margin: 5px;
+    padding: 10px 25px;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .UserLink {
+    display: block;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border: solid 2px black;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .UserLink {
+    display: block;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    border: solid 2px black;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 5px;
+  }
 }

@@ -1,26 +1,31 @@
-.NewUser {
-  padding: 12% 0;
-  text-align: center;
-  border: 5px solid black;
-  border-radius: 5px;
-  margin: 25px;
+.Name {
+  display: inline;
 }
-div {
-  padding: 20px 0;
+.Email {
+  display: inline;
 }
-label {
-  margin: 0 10px;
+.CompanyNumber {
+  display: inline;
+}
+.Company {
+  display: inline;
+}
+input {
+  width: 24%;
+}
+@media screen and (min-width: 1200px) {
 }
 
-#Submit_Request {
-  width: 20%;
-  height: 50%;
-  color: white;
-  background-color: coral;
-  border-radius: 5px;
-  font-size: 26px;
-  cursor: pointer;
+@media screen and (min-width: 600px) {
+  .EmailBox {
+    margin: 0 15px;
+  }
 }
-#Submit_Request:hover {
-  background-color: 0 5px #666;
+
+@media screen and (min-width: 300px) {
+  input {
+    margin: 20px 0;
+    height: 50px;
+    border-radius: 5px;
+  }
 }

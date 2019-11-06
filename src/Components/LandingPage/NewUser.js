@@ -6,28 +6,32 @@ export default class NewUser extends React.Component {
     return (
       <div className="NewUser">
         <header>
-          <h1> Talk Advisor Today To Setup An Account!</h1>
+          <h1> Talk To An Advisor Today!</h1>
           <form className="signup-form">
-            <div>
-              <label htmlFor="First-name"> First Name:*</label>
-              <input type="text" id="First-name"></input>
+            <div className="FirstName">
+              <label className="Name"> First Name:*</label>
+              <input type="text"></input>
             </div>
-            <div>
-              <label htmlfor="last-name"> Last Name:*</label>
-              <input type="text" id="last-name"></input>
+            <div className="LastName">
+              <label className="Name"> Last Name:*</label>
+              <input type="text"></input>
             </div>
-            <div>
-              <div>
-                <label htmlfor="Business-Email"> Business Email:*</label>
-                <input type="text" id="Business-Email" required></input>
-              </div>
-              <div>
-                <label htmlfor="Phone-Number"> Phone:*</label>
-                <input type="text" id="Business-Email" required></input>
-              </div>
-              <label htmlfor="Company"> Company Name:*</label>
-              <input type="text" placeholder="Google" id="company-name"></input>
+
+            <div className="BusinessEmail">
+              <label className="Email"> Business Email:*</label>
+              <input className="EmailBox" type="text" required></input>
             </div>
+
+            <div className="CustomeNumber">
+              <label className="CompanyNumber"> Phone:*</label>
+              <input type="text" required></input>
+            </div>
+
+            <div className="CompanyName">
+              <label className="Company"> Company Name:*</label>
+              <input type="text"></input>
+            </div>
+
             <button type="submit" id="Submit_Request">
               Submit
             </button>

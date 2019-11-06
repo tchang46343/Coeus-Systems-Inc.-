@@ -33,16 +33,10 @@ export default class AdvertisingServices extends React.Component {
         </section>
         <section className="clients">
           <header>
-            <h4>Some of the world’s leading companies use Coeus System Inc.</h4>
-            <ul>
-              <li> Acebook</li>
-              <li> ittube</li>
-              <li> groundbnb</li>
-              <li> Dooogle</li>
-              <li> letFlix</li>
-              <li> grapple</li>
-              <li>Ross Dress for Less</li>
-            </ul>
+            <h4>
+              Coeus System Inc has partnered with companies such as Acebook,
+              ittube, letFlix, grapple, and Ross Dress for Less.
+            </h4>
           </header>
         </section>
       </div>

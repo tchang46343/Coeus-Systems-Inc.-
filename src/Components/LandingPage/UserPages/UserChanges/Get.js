@@ -8,7 +8,7 @@ export default class GetData extends React.Component {
       <div className="GetContent">
         <UserNav />
         <form className="addNewPart">
-          <label className="vendor:">Vendor:</label>
+          <label className="vendor">Vendor:</label>
           <input
             type="text"
             placeholder="Madix"

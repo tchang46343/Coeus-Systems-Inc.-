@@ -3,23 +3,34 @@
   align-items: center;
   flex-direction: column;
   border: solid 2px black;
-  margin: 25px;
-  border-radius: 5px;
-  padding: 25px;
-  font-size: 26px;
-}
-
-input {
-  margin: 20px 0;
-  height: 50px;
-  width: 20%;
   border-radius: 5px;
 }
-
-.Report {
-  height: 50px;
-  width: 20%;
+.vendor {
+  display: inline;
+  font-size: 100px;
+}
+.item {
+  display: inline;
+}
+.vendorName {
+  width: 200px;
   text-align: center;
+  font-size: 10px;
+}
+.partID {
+  padding: 0;
+  width: 200px;
+}
+.Report {
+  cursor: pointer;
+  border: solid 2px black;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.Report:hover {
+  background-color: lightskyblue;
 }
 footer {
   display: flex;
@@ -29,4 +40,49 @@ footer {
   margin: 25px;
   border-radius: 5px;
   padding: 25px;
+}
+
+@media screen and (min-width: 700px) {
+  .vendor {
+    margin: 20px;
+    font-size: 25px;
+  }
+  .item {
+    display: inline;
+    margin: 20px;
+    font-size: 25px;
+  }
+
+  .vendorName {
+    width: 300px;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .partID {
+    padding: 0;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .vendor {
+    font-size: 16px;
+  }
+  .vendorName {
+    display: inline;
+    font-size: 25px;
+  }
+  .item {
+    font-size: 16px;
+  }
+  .partID {
+    display: inline;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .Report {
+    margin-bottom: 15px;
+  }
 }
