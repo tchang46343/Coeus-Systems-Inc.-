@@ -12,16 +12,16 @@ export default class GetData extends React.Component {
           <input
             type="text"
             placeholder="Madix"
-            className="vendorName"
+            className="partID"
             required
           ></input>
           <label className="item">Enter Part ID:</label>
           <input type="text" placeholder="GT-413-10" className="partID"></input>
           <button className="Report">Run Report</button>
+          <footer className="content-info">
+            Created by Terrance Chang Copyright © 2019 All Rights Reserved
+          </footer>
         </form>
-        <footer className="content-info">
-          Created by Terrance Chang Copyright © 2019 All Rights Reserved
-        </footer>
       </div>
     );
   }

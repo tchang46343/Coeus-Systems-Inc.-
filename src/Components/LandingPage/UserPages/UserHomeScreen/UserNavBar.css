@@ -1,104 +1,61 @@
-* {
-  box-sizing: border-box;
-}
-.navContent {
-  display: flex;
-  margin-top: 2px;
-}
-.AppTitle {
-  border: 5px solid black;
-  flex: 1;
-  margin: 10px;
-  padding: 30px;
-}
-.UserControls {
-  border: 5px solid black;
-  flex: 2;
-  margin: 20px;
-  text-align: center;
-  padding: 5px 0;
-}
-
-.UserControls label,
-#hamburger {
-  display: none;
-}
-/* .UserControls label,
-#hamburger {
-  display: none;
-}
-.UserControls ul {
-  list-style-type: none;
+body {
   margin: 0;
   padding: 0;
-  text-transform: uppercase;
 }
-.UserControls ul li {
-  display: inline-block;
-  padding: 10px;
-  position: relative;
-}
-.UserControls ul li a {
-  color: black;
-  text-decoration: none;
-}
-.UserControls ul li a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  width: 0%;
-  background-color: white;
+.MainTitle {
+  /* background: black; */
+  /* color: white; */
+  position: absolute;
   top: 0;
-}
-.UserControls ul li a:hover::before {
-  width: 100%;
-  transition: all ease-in-out 300ms;
-} */
-
-@media screen and (min-width: 900px) {
-  .UserControls {
-    display: inline-block;
-    color: black;
-    font-style: normal;
-    font-size: 30px;
-    padding: 10px;
-  }
-  .HamburgerLinks {
-    display: none;
-  }
-
-  .HamburgerCheckBox {
-    display: none;
-  }
-  .NavLinks {
-    display: inline-block;
-  }
+  width: 90%;
+  height: 5px;
 }
 
-/* @media screen and (min-width: 700px) {
-  .UserControls ul {
-    display: none;
-    padding: 10px;
-    font-size: 2em;
-  }
-  .UserControls ul li {
-    display: inline-block;
-  }
-}*/
+.Title {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  margin: 25px;
+}
+.WelcomeLogin {
+  float: right;
+  padding: 30px 25px;
+  margin: 0 25px;
+}
+input {
+  display: none;
+}
 
-@media screen and (min-width: 300px) {
-  .UserControls label {
-    display: inline-block;
-    padding: 10px;
-    font-size: 2em;
-  }
-  .UserControls ul li {
-    display: block;
-  }
-  .UserControls ul {
+ul {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  background-color: aqua;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.WelcomeLogin input:checked ~ ul {
+  display: block;
+}
+
+@media screen and (min-width: 700px) {
+  label {
     display: none;
   }
-  .UserControls input:checked ~ ul {
+
+  ul {
     display: block;
+    padding: 0 20px;
+    list-style-type: none;
+    background-color: aqua;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    padding: 0 10px;
   }
 }

@@ -5,27 +5,24 @@ import "./UserNavBar.css";
 export default class NavBar extends React.Component {
   render() {
     return (
-      <div className="navContent">
-        <header className="AppTitle"> Coeus</header>
-        <nav className="UserControls">
+      <header className="MainTitle">
+        <h1 className="Title">Coeus</h1>
+        <nav className="WelcomeLogin">
           <label for="hamburger">&#9776;</label>
           <input type="checkbox" id="hamburger" />
           <ul>
             <li>
-              <Link to="/userpage"> Home </Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a className="nav-link scroll" href="#Services">
-                Profile Settings
-              </a>
+              <Link>Services</Link>
             </li>
-
             <li>
-              <Link to="/"> Sign Out </Link>
+              <Link to="/userpage">Sign-In</Link>
             </li>
           </ul>
         </nav>
-      </div>
+      </header>
     );
   }
 }

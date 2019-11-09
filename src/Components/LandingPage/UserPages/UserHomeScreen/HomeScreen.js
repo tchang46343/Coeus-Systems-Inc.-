@@ -10,9 +10,6 @@ export default class UserHomeScreen extends Component {
           <UserNav />
           <UserOptions />
         </main>
-        <footer className="Legal">
-          Created by Terrance Chang Copyright © 2019 All Rights Reserved
-        </footer>
       </div>
     );
   }

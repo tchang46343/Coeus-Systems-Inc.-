@@ -7,24 +7,25 @@ export default class DeleteData extends React.Component {
     return (
       <div className="DeleteContent">
         <UserNav />
-        <form className="addNewPart">
-          <label id="vendor:">Vendor:</label>
+        <form className="DeleteData">
+          <label className="VendorDelete">Vendor:</label>
           <input
             type="text"
-            className="vendorName"
+            className="VendorDeleteName"
             placeholder="Madix"
             required
           ></input>
-          <label className="item">Enter Part ID:</label>
+          <label className="DeleteItem">Enter Part ID:</label>
           <input
             type="text"
-            className="partID"
+            className="DeletePartID"
             placeholder="GT-413-10"
             required
           ></input>
-          <button>Delete</button>
+          <button className="DeleteButton">Delete</button>
         </form>
-        <footer className="content-info">
+
+        <footer>
           Created by Terrance Chang Copyright © 2019 All Rights Reserved
         </footer>
       </div>

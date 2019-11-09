@@ -20,6 +20,9 @@ export default class UserOptions extends React.Component {
         <Link to="/updatedata" className="UserLink">
           UPDATE Inventory Data
         </Link>
+        <footer className="Legal">
+          Created by Terrance Chang Copyright © 2019 All Rights Reserved
+        </footer>
       </div>
     );
   }

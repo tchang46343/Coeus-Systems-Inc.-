@@ -11,7 +11,7 @@ export default class PostData extends React.Component {
           <label className="vendor:">Vendor:</label>
           <input
             type="text"
-            className="vendorName"
+            className="PostName"
             placeholder="Madix"
             required
           ></input>
@@ -19,27 +19,31 @@ export default class PostData extends React.Component {
           <label className="item">Enter part ID:</label>
           <input
             type="text"
-            className="partID"
+            className="PostID"
             placeholder="GT-413-10"
             required
           ></input>
 
-          <label className="item">Part QTY unavailable:</label>
+          <label className="item">QTY Unavailable:</label>
           <input
-            type="text"
-            className="idQtyUnavailable"
-            placeholder="GT-413-10"
+            type="number"
+            className="PostQtyUnavail"
+            placeholder="10"
+            min="1"
+            max="200"
             required
           ></input>
 
-          <label className="item">Part QTY Available:</label>
+          <label className="item">QTY Available:</label>
           <input
-            type="text"
-            className="idQtyAvailable"
-            placeholder="GT-413-10"
+            type="number"
+            className="PostQtyAvail"
+            placeholder="10"
+            min="1"
+            max="200000"
             required
           ></input>
-          <button className="post">POST</button>
+          <button className="PostButton">POST</button>
         </form>
         <footer className="content-info">
           Created by Terrance Chang Copyright © 2019 All Rights Reserved

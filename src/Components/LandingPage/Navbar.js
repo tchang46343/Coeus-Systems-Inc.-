@@ -18,9 +18,6 @@ export default class NavBar extends React.Component {
               <Link>Services</Link>
             </li>
             <li>
-              <Link>About Us</Link>
-            </li>
-            <li>
               <Link to="/userpage">Sign-In</Link>
             </li>
           </ul>

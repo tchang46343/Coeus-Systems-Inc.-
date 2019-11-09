@@ -1,0 +1,56 @@
+.DeleteContent {
+  display: flex;
+  flex-direction: column;
+  margin: 0 80px;
+}
+
+.VendorDelete {
+  text-align: center;
+  font-size: 25px;
+}
+
+.VendorDeleteName {
+  display: inline-block;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.DeleteItem {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+.DeletePartID {
+  font-size: 16px;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.DeleteButton {
+  display: inline-block;
+  border-radius: 5px;
+  border: solid black 2px;
+  background-color: bisque;
+  width: 100px;
+}
+.DeleteData {
+  text-align: center;
+}
+
+/* @media screen and (min-width: 700px) {
+  .DeleteItem {
+    display: block;
+  }
+
+  .DeletePartID {
+    display: inline-block;
+  }
+
+  .DeleteButton {
+    display: block;
+    text-align: center;
+    margin: 0 250px;
+  }
+} */

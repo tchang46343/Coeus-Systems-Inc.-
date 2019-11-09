@@ -8,33 +8,23 @@ export default class NewUser extends React.Component {
         <header>
           <h1> Talk To An Advisor Today!</h1>
           <form className="signup-form">
-            <div className="FirstName">
-              <label className="Name"> First Name:*</label>
-              <input type="text"></input>
-            </div>
-            <div className="LastName">
-              <label className="Name"> Last Name:*</label>
-              <input type="text"></input>
-            </div>
+            <label className="Name">Name:*</label>
+            <input className="UserEntry" type="text" required></input>
 
-            <div className="BusinessEmail">
-              <label className="Email"> Business Email:*</label>
-              <input className="EmailBox" type="text" required></input>
-            </div>
+            <label className="Name"> Business Email:*</label>
+            <input className="UserEntry" type="text" required></input>
 
-            <div className="CustomeNumber">
-              <label className="CompanyNumber"> Phone:*</label>
-              <input type="text" required></input>
-            </div>
+            <label className="CompanyNumber"> Phone:</label>
+            <input className="UserEntry" type="text" required></input>
 
-            <div className="CompanyName">
-              <label className="Company"> Company Name:*</label>
-              <input type="text"></input>
-            </div>
+            <label className="Company"> Company Name:</label>
+            <input className="UserEntry" type="text"></input>
 
-            <button type="submit" id="Submit_Request">
-              Submit
-            </button>
+            <div className="Submit_Request">
+              <button type="submit" className="submitInfo">
+                Submit
+              </button>
+            </div>
           </form>
         </header>
       </div>
