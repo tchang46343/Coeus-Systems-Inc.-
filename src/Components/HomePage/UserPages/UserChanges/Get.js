@@ -1,9 +1,12 @@
 import React from "react";
 import "./Get.css";
 import UserNav from "./UserNav";
+import Context from "../../../../context";
 
 export default class GetData extends React.Component {
+  static contextType = Context;
   render() {
+    console.log(this.context.vendors);
     return (
       <div className="GetContent">
         <UserNav />

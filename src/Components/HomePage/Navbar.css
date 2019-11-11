@@ -1,10 +1,9 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
-}
+} */
 .MainTitle {
-  /* background: black; */
-  /* color: white; */
+  display: inline-block;
   position: absolute;
   top: 0;
   width: 90%;
@@ -13,25 +12,22 @@ body {
 
 .Title {
   display: inline-block;
-  text-align: center;
+  text-align: left;
   color: black;
   margin: 25px;
 }
 .WelcomeLogin {
   float: right;
-  padding: 30px 25px;
-  margin: 0 25px;
 }
-input {
+#hamburger {
   display: none;
 }
-
 ul {
   display: none;
   position: absolute;
   list-style-type: none;
   background-color: aqua;
-  padding: 10px;
+  padding: 0 25px;
 }
 a {
   text-decoration: none;
@@ -39,23 +35,13 @@ a {
 }
 .WelcomeLogin input:checked ~ ul {
   display: block;
+  margin-left: 80px;
+  margin-top: -19px;
+  text-align: left;
 }
 
 @media screen and (min-width: 700px) {
-  label {
-    display: none;
-  }
-
-  ul {
-    display: block;
-    padding: 0 20px;
-    list-style-type: none;
-    background-color: aqua;
-  }
-  li {
-    display: inline-block;
-  }
-  a {
-    padding: 0 10px;
-  }
+  /* .naaaaa {
+    display: inline;
+  } */
 }

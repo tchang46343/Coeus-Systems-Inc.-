@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./UserNavBar.css";
+import "./Navbar.css";
 
 export default class NavBar extends React.Component {
   render() {
     return (
       <header className="MainTitle">
-        <h1 className="Title">Coeus</h1>
         <nav className="WelcomeLogin">
-          <label for="hamburger">&#9776;</label>
+          <h1 className="Title">Coeus</h1>
+          <label className="naaaaa" for="hamburger">
+            &#9776;
+          </label>
           <input type="checkbox" id="hamburger" />
           <ul>
             <li>

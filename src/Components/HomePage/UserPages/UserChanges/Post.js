@@ -3,11 +3,15 @@ import "./Post.css";
 import UserNav from "./UserNav";
 
 export default class PostData extends React.Component {
+  onSubmit(event) {
+    event.preventDefault();
+    console.log("test");
+  }
   render() {
     return (
       <div className="GetContent">
         <UserNav />
-        <form className="addNewPart">
+        <form className="addNewPart" onSubmit={event => this.onSubmit(event)}>
           <label className="vendor:">Vendor:</label>
           <input
             type="text"
