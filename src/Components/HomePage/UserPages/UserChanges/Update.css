@@ -1,12 +1,17 @@
 .vendorName {
-  padding: 0 8%;
+  margin: 20px 0;
+
+  border-radius: 5px;
+  display: inline;
+  font-size: 25px;
+  text-align: center;
 }
-.partID {
-  padding: 0 7%;
-}
+
 .ItemQty {
-  padding: 0 8%;
-}
-.Update {
-  width: 20%;
+  margin: 20px 0;
+
+  border-radius: 5px;
+  display: inline;
+  font-size: 25px;
+  text-align: center;
 }

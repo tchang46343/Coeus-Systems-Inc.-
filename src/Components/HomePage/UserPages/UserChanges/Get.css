@@ -3,12 +3,17 @@
   align-items: center;
   flex-direction: column;
 }
-label {
+.vendor {
   display: inline;
   font-size: 25px;
 }
 
 .vendorName {
+  display: inline;
+  font-size: 25px;
+}
+
+.item {
   display: inline;
   font-size: 25px;
 }

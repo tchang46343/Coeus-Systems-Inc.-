@@ -1,12 +1,10 @@
 import React from "react";
 import "./Update.css";
-import UserNav from "./UserNav";
 
 export default class UpdateData extends React.Component {
   render() {
     return (
       <div className="UpdateContent">
-        <UserNav />
         <form className="addNewPart">
           <label id="vendor:">Vendor:</label>
           <input

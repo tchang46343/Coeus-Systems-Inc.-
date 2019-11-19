@@ -1,12 +1,10 @@
 import React from "react";
 import "./Delete.css";
-import UserNav from "./UserNav";
 
 export default class DeleteData extends React.Component {
   render() {
     return (
       <div className="DeleteContent">
-        <UserNav />
         <form className="DeleteData">
           <label className="VendorDelete">Vendor:</label>
           <input

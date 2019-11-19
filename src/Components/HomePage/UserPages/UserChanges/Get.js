@@ -1,6 +1,5 @@
 import React from "react";
 import "./Get.css";
-import UserNav from "./UserNav";
 import Context from "../../../../context";
 
 export default class GetData extends React.Component {
@@ -9,7 +8,6 @@ export default class GetData extends React.Component {
     console.log(this.context.vendors);
     return (
       <div className="GetContent">
-        <UserNav />
         <form className="addNewPart">
           <label className="vendor">Vendor:</label>
           <input

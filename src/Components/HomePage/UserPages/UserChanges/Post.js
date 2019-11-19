@@ -1,6 +1,6 @@
 import React from "react";
 import "./Post.css";
-import UserNav from "./UserNav";
+//import UserNav from "./UserNav";
 
 export default class PostData extends React.Component {
   onSubmit(event) {
@@ -10,7 +10,6 @@ export default class PostData extends React.Component {
   render() {
     return (
       <div className="GetContent">
-        <UserNav />
         <form className="addNewPart" onSubmit={event => this.onSubmit(event)}>
           <label className="vendor:">Vendor:</label>
           <input
