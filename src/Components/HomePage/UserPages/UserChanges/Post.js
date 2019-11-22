@@ -19,7 +19,7 @@ export default class PostData extends React.Component {
             required
           ></input>
 
-          <label className="item">Enter part ID:</label>
+          <label className="item">Enter Part ID:</label>
           <input
             type="text"
             className="PostID"
@@ -27,23 +27,11 @@ export default class PostData extends React.Component {
             required
           ></input>
 
-          <label className="item">QTY Unavailable:</label>
-          <input
-            type="number"
-            className="PostQtyUnavail"
-            placeholder="10"
-            min="1"
-            max="200"
-            required
-          ></input>
-
           <label className="item">QTY Available:</label>
           <input
-            type="number"
+            type="string"
             className="PostQtyAvail"
-            placeholder="10"
-            min="1"
-            max="200000"
+            placeholder="Yes or No"
             required
           ></input>
           <button className="PostButton">POST</button>
