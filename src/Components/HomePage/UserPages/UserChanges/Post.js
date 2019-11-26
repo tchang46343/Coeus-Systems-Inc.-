@@ -3,10 +3,34 @@ import "./Post.css";
 //import UserNav from "./UserNav";
 
 export default class PostData extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      vendor: " ",
+      item: " ",
+      availability: " "
+    };
+  }
+
+  vendorChanged(vendor) {
+    this.setState({
+      vendor
+    });
+  }
+  itemChanged(item) {
+    this.setState({
+      item
+    });
+  }
+  availabilityChanged(availability) {
+    this.setState({
+      availability
+    });
+  }
   onSubmit(event) {
     event.preventDefault();
-    const url = "https://coeus-system-inc.herokuapp.com/inventory";
 
+    const url = "https://coeus-system-inc.herokuapp.com/inventory";
     fetch(url);
   }
   render() {
@@ -19,6 +43,8 @@ export default class PostData extends React.Component {
             className="PostName"
             placeholder="Madix"
             required
+            value={this.state.vendor}
+            onChange={e => this.vendorChanged(e.target.value)}
           ></input>
 
           <label className="item">Enter Part ID:</label>
@@ -27,6 +53,8 @@ export default class PostData extends React.Component {
             className="PostID"
             placeholder="GT-413-10"
             required
+            value={this.state.item}
+            onChange={e => this.itemChanged(e.target.value)}
           ></input>
 
           <label className="item">QTY Available:</label>
@@ -35,6 +63,8 @@ export default class PostData extends React.Component {
             className="PostQtyAvail"
             placeholder="Yes or No"
             required
+            value={this.state.availability}
+            onChange={e => this.availabilityChanged(e.target.value)}
           ></input>
           <button className="PostButton">POST</button>
         </form>
