@@ -6,19 +6,19 @@ export default class UserOptions extends React.Component {
     return (
       <div className="UserOptions">
         <Link to="/getdata" className="UserLink">
-          GET Inventory Data
+          Retrieve Items
         </Link>
 
         <Link to="/postdata" className="UserLink">
-          POST Inventory Data
+          Add Item
         </Link>
 
         <Link to="/deletedata" className="UserLink">
-          DELETE Inventory Data
+          Delete Item
         </Link>
 
         <Link to="/updatedata" className="UserLink">
-          UPDATE Inventory Data
+          Update Item
         </Link>
         <footer className="Legal">
           Created by Terrance Chang Copyright © 2019 All Rights Reserved

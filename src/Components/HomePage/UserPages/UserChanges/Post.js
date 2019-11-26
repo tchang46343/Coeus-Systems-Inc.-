@@ -5,7 +5,9 @@ import "./Post.css";
 export default class PostData extends React.Component {
   onSubmit(event) {
     event.preventDefault();
-    console.log("test");
+    const url = "https://coeus-system-inc.herokuapp.com/inventory";
+
+    fetch(url);
   }
   render() {
     return (
