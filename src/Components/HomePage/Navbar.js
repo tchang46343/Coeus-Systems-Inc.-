@@ -8,7 +8,7 @@ export default class NavBar extends React.Component {
       <header className="MainTitle">
         <nav className="WelcomeLogin">
           <h1 className="Title">Coeus</h1>
-          <label className="naaaaa" for="hamburger">
+          <label className="naaaaa" htmlFor="hamburger">
             &#9776;
           </label>
           <input type="checkbox" id="hamburger" />

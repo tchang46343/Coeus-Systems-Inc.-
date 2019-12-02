@@ -29,9 +29,38 @@ export default class PostData extends React.Component {
   }
   onSubmit(event) {
     event.preventDefault();
-
+    const { vendor, item, availability } = this.state;
+    const newVendor = { vendor, item, availability };
     const url = "https://coeus-system-inc.herokuapp.com/inventory";
-    fetch(url);
+    const options = {
+      method: "POST",
+      body: JSON.stringify(newVendor),
+      header: {
+        "Content-Type": "application/json"
+      }
+    };
+
+    fetch(url, options)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error("Something went wrong, please try again.");
+        }
+        return res.json();
+      })
+
+      .then(data => {
+        this.setState({
+          vendor: " ",
+          item: " ",
+          availability: "Yes"
+        });
+        this.props.onSubmit(newVendor);
+      })
+      .catch(err => {
+        this.setState({
+          error: err.message
+        });
+      });
   }
   render() {
     return (
