@@ -7,8 +7,8 @@ export default class PostData extends React.Component {
     super(props);
     this.state = {
       vendor: " ",
-      item: " ",
-      availability: " "
+      item_name: " ",
+      availbility: " "
     };
   }
 
@@ -17,20 +17,20 @@ export default class PostData extends React.Component {
       vendor
     });
   }
-  itemChanged(item) {
+  itemChanged(item_name) {
     this.setState({
-      item
+      item_name
     });
   }
-  availabilityChanged(availability) {
+  availabilityChanged(availbility) {
     this.setState({
-      availability
+      availbility
     });
   }
   onSubmit(event) {
     event.preventDefault();
-    const { vendor, item, availability } = this.state;
-    const newVendor = { vendor, item, availability };
+    const { vendor, item_name, availbility } = this.state;
+    const newVendor = { vendor, item_name, availbility };
     const url = "https://coeus-system-inc.herokuapp.com/inventory";
     const options = {
       method: "POST",
@@ -51,7 +51,7 @@ export default class PostData extends React.Component {
       .then(data => {
         this.setState({
           vendor: " ",
-          item: " ",
+          item_name: " ",
           availability: "Yes"
         });
         this.props.onSubmit(newVendor);
@@ -82,17 +82,17 @@ export default class PostData extends React.Component {
             className="PostID"
             placeholder="GT-413-10"
             required
-            value={this.state.item}
+            value={this.state.item_name}
             onChange={e => this.itemChanged(e.target.value)}
           ></input>
 
-          <label className="item">QTY Available:</label>
+          <label className="item">Available(Yes or No):</label>
           <input
             type="string"
             className="PostQtyAvail"
             placeholder="Yes or No"
             required
-            value={this.state.availability}
+            value={this.state.availbility}
             onChange={e => this.availabilityChanged(e.target.value)}
           ></input>
           <button className="PostButton">POST</button>

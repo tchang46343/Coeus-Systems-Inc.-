@@ -13,14 +13,11 @@ export default class AdvertisingServices extends React.Component {
       <div>
         <header className="banner">
           <h1>Coeus System Inc.</h1>
-          <h2>
-            Intuitive, Collobarative, Inventory Management Software for Any
-            Business.
-          </h2>
+          <h2>Intuitive, inventory management software for any business.</h2>
           <p>
             Coeus provides a scalble and intuitive inventory management
-            software. We priorize our customer demands and build tools to help
-            grow and manage their business.
+            software.We priorize our customer demands, and build tools to help
+            grow their business.
           </p>
         </header>
         <form className="ServiceHook" onSubmit={event => this.onSubmit(event)}>
@@ -29,7 +26,7 @@ export default class AdvertisingServices extends React.Component {
           </header>
           <p>
             Working with our customers we focus on specific category needs such
-            as order management, End-to-end tracking, warehouse managment, and
+            as order management, end-to-end tracking, warehouse managment, and
             accounting.
           </p>
           <p>
