@@ -1,5 +1,7 @@
 import React from "react";
 
-export default React.createContext({
+const AppData = React.createContext({
   vendors: []
 });
+
+export default AppData;

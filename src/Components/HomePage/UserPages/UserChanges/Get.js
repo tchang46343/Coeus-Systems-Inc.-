@@ -4,6 +4,20 @@ import Context from "../../../../context";
 
 export default class GetData extends React.Component {
   static contextType = Context;
+  // const { search = "" } = req.query;
+  // // filter the results by the search query
+
+  // const results = consumerData.filter(consumer =>
+  //   consumer.Vendor.toLowerCase().includes(search.toLowerCase())
+  // );
+
+  // if (results === []) {
+  //   res
+  //     .status(404)
+  //     .json({ error: "Vendor Invalid, please enter a valid vendor" });
+  // }
+
+  // res.json(results);
   render() {
     console.log(this.context.vendors);
     return (
