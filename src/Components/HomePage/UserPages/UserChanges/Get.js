@@ -1,9 +1,14 @@
 import React from "react";
 import "./Get.css";
-import Context from "../../../../context";
+import { VendorContext } from "../../../../VendorContext";
 
 export default class GetData extends React.Component {
-  static contextType = Context;
+  static contextType = VendorContext;
+
+  handleSubmit(e) {
+    e.preventDefault();
+    return <p>{this.context}</p>;
+  }
   // const { search = "" } = req.query;
   // // filter the results by the search query
 
@@ -19,10 +24,12 @@ export default class GetData extends React.Component {
 
   // res.json(results);
   render() {
-    console.log(this.context.vendors);
+    console.log(this.context);
+    const { vendor, item_name, description, price, availbility } = this.context;
+
     return (
       <div className="GetContent">
-        <form className="addNewPart">
+        <form className="addNewPart" onSubmit={this.handleSubmit}>
           <label className="vendor">Vendor:</label>
           <input
             type="text"
