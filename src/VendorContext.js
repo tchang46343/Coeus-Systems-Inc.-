@@ -12,7 +12,7 @@ class VendorContextProvider extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:8000/inventory", {
+    fetch("https://coeus-system-inc.herokuapp.com/inventory", {
       headers: {
         "Content-Type": "application/json"
       }
