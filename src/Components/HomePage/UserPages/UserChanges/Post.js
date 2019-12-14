@@ -31,7 +31,7 @@ export default class PostData extends React.Component {
     event.preventDefault();
     const { vendor, item_name, availbility } = this.state;
     const newVendor = { vendor, item_name, availbility };
-    const url = "https://localhost:8000/inventory";
+    const url = "https://coeus-system-inc.herokuapp.com/inventory";
     // "https://coeus-system-inc.herokuapp.com/inventory";
     const options = {
       method: "POST",

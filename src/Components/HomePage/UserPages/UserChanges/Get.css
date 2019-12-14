@@ -8,9 +8,10 @@
   font-size: 25px;
 }
 
-.vendorName {
+.VendorName {
   display: inline;
   font-size: 25px;
+  text-align: center;
 }
 
 .item {
@@ -18,7 +19,7 @@
   font-size: 25px;
 }
 
-.partID {
+.PartId {
   display: inline;
   font-size: 25px;
   text-align: center;

@@ -7,7 +7,10 @@ class VendorContextProvider extends Component {
     super(props);
     this.state = {
       vendors: [],
-      filter: ""
+      filter: {
+        vendor: "",
+        item_Name: ""
+      }
     };
   }
 
@@ -26,6 +29,11 @@ class VendorContextProvider extends Component {
       });
   }
 
+  updateFilter(vendor, item_Name) {
+    this.setState({
+      filter: { vendor, item_Name }
+    });
+  }
   render() {
     return (
       <VendorContext.Provider value={{ ...this.state }}>
