@@ -12,7 +12,7 @@ export default class NavBar extends React.Component {
             &#9776;
           </label>
           <input type="checkbox" id="hamburger" />
-          <ul>
+          <ul className="navLinksForPages">
             <li>
               <Link to="/">Coeus Webpage</Link>
             </li>

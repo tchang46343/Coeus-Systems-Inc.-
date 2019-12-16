@@ -22,7 +22,7 @@
 #hamburger {
   display: none;
 }
-ul {
+.navLinksForPages {
   display: none;
   position: absolute;
   list-style-type: none;

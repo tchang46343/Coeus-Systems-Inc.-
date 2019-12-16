@@ -29,14 +29,20 @@ class VendorContextProvider extends Component {
       });
   }
 
-  updateFilter(vendor, item_Name) {
+  updateFilter = (vendor, item_Name) => {
     this.setState({
       filter: { vendor, item_Name }
     });
-  }
+  };
   render() {
+    const { vendors, filter } = this.state;
+    const value = {
+      vendors,
+      filter,
+      updateFilter: this.updateFilter
+    };
     return (
-      <VendorContext.Provider value={{ ...this.state }}>
+      <VendorContext.Provider value={value}>
         {this.props.children}
       </VendorContext.Provider>
     );

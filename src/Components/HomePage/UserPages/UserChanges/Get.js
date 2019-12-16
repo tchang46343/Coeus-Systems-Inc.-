@@ -8,7 +8,7 @@ export default class GetData extends React.Component {
     super(props);
     this.state = {
       vendor: "",
-      item_Name: ""
+      item_name: ""
     };
   }
   VendorChanged(vendor) {
@@ -17,31 +17,28 @@ export default class GetData extends React.Component {
     });
   }
 
-  ItemChanged(item_Name) {
+  ItemChanged(item_name) {
     this.setState({
-      item_Name
+      item_name
     });
   }
 
-  handleSubmit(e) {
+  handleSubmit = e => {
     e.preventDefault();
-    return <p>{this.context}</p>;
-  }
+    this.context.updateFilter(this.state.vendor, this.state.item_name);
+  };
 
   render() {
-    console.log(this.vendor);
-    console.log(this.item_Name);
-    const { vendor, item_Name, description, price, availbility } = this.context;
+    const { vendor, item_name } = this.state;
 
-    const itemsJSX = this.context.inventory
+    const itemsJSX = this.context.vendors
       .filter(item => {
         return (
           item.vendor.toLowerCase() === vendor.toLowerCase() &&
-          item.item_Name.toLowerCase() &&
-          item_Name.toLowerCase()
+          item.item_name.toLowerCase() &&
+          item_name.toLowerCase()
         );
       })
-
       .map((item, idx) => {
         return (
           <li key={idx} className="item">
@@ -50,6 +47,8 @@ export default class GetData extends React.Component {
           </li>
         );
       });
+
+    console.log(itemsJSX);
     return (
       <div className="GetContent">
         <form className="addNewPart" onSubmit={this.handleSubmit}>
@@ -75,8 +74,8 @@ export default class GetData extends React.Component {
           <footer className="content-info">
             Created by Terrance Chang Copyright © 2019 All Rights Reserved
           </footer>
-          <ul>{itemsJSX}</ul>
         </form>
+        <ul>{itemsJSX}</ul>
       </div>
     );
   }
