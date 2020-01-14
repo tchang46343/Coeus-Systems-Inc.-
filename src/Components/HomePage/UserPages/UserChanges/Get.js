@@ -71,11 +71,12 @@ export default class GetData extends React.Component {
             onChange={e => this.ItemChanged(e.target.value)}
           ></input>
           <button className="Report">Run Report</button>
-          <footer className="content-info">
-            Created by Terrance Chang Copyright © 2019 All Rights Reserved
-          </footer>
         </form>
-        <ul>{itemsJSX}</ul>
+        <header className="resultsTitle"> Results: </header>
+        <ul className="Results">{itemsJSX}</ul>
+        <footer className="content-info">
+          Created by Terrance Chang Copyright © 2019 All Rights Reserved
+        </footer>
       </div>
     );
   }

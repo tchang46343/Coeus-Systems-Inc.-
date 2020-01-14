@@ -1,3 +1,6 @@
+.vendorTitle {
+  font-size: 16px;
+}
 .addNewPart {
   display: flex;
   flex-direction: column;

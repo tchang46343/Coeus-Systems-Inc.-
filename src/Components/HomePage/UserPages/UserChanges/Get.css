@@ -44,6 +44,12 @@ footer {
   margin: 25px;
   padding: 25px;
 }
+.resultsTitle {
+  text-align: center;
+}
+.Results {
+  text-align: center;
+}
 
 @media screen and (min-width: 700px) {
   .addNewPart {

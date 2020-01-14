@@ -27,6 +27,10 @@ export default class PostData extends React.Component {
       availbility
     });
   }
+  handleClick(e) {
+    e.preventDefault();
+    alert("Your new vendor has been added! Code(201)");
+  }
   onSubmit(event) {
     event.preventDefault();
     const { vendor, item_name, availbility } = this.state;
@@ -67,7 +71,7 @@ export default class PostData extends React.Component {
     return (
       <div className="GetContent">
         <form className="addNewPart" onSubmit={event => this.onSubmit(event)}>
-          <label className="vendor:">Vendor:</label>
+          <label className="vendorTitle">Vendor:</label>
           <input
             type="text"
             className="PostName"
@@ -96,7 +100,9 @@ export default class PostData extends React.Component {
             value={this.state.availbility}
             onChange={e => this.availabilityChanged(e.target.value)}
           ></input>
-          <button className="PostButton">POST</button>
+          <button className="PostButton" onClick={this.handleClick}>
+            POST
+          </button>
         </form>
         <footer className="content-info">
           Created by Terrance Chang Copyright © 2019 All Rights Reserved
