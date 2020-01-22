@@ -1,9 +1,12 @@
 .DeleteContent {
   display: flex;
   flex-direction: column;
-  margin: 0 80px;
+  padding: 50px 0;
 }
-
+.titleDelete {
+  font-size: 28px;
+  font-weight: bold;
+}
 .VendorDelete {
   text-align: center;
   font-size: 25px;
@@ -13,6 +16,7 @@
   font-size: 16px;
   text-overflow: ellipsis;
   text-align: center;
+  margin: 40px 0;
 }
 
 .DeleteItem {
@@ -24,33 +28,24 @@
   font-size: 16px;
   text-align: center;
   text-overflow: ellipsis;
+  margin: 50px 0;
 }
 
 .DeleteButton {
   border-radius: 5px;
   border: solid black 2px;
   background-color: bisque;
-  width: 100px;
-
-  margin: auto;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .DeleteData {
   text-align: center;
   display: block;
 }
-
-/* @media screen and (min-width: 700px) {
-  .DeleteItem {
-    display: block;
-  }
-
-  .DeletePartID {
-    display: inline-block;
-  }
-
-  .DeleteButton {
-    display: block;
-    text-align: center;
-    margin: 0 250px;
-  }
-} */
+.deleteLegal {
+  position: absolute;
+  bottom: 5px;
+  right: 150px;
+}

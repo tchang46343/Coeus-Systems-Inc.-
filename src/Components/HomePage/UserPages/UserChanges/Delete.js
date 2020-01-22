@@ -7,6 +7,7 @@ export default class DeleteData extends React.Component {
       <div className="DeleteContent">
         <form className="DeleteData">
           <section className="vendorSection1">
+            <header className="titleDelete">Delete Item</header>
             <label className="VendorDelete">Vendor:</label>
             <input
               type="text"
@@ -16,7 +17,7 @@ export default class DeleteData extends React.Component {
             ></input>
           </section>
           <section className="vendorSection2">
-            <label className="DeleteItem">Enter Part ID:</label>
+            <label className="DeleteItem">Part ID:</label>
             <input
               type="text"
               className="DeletePartID"
@@ -27,10 +28,6 @@ export default class DeleteData extends React.Component {
 
           <button className="DeleteButton">Delete</button>
         </form>
-
-        <footer>
-          Created by Terrance Chang Copyright © 2019 All Rights Reserved
-        </footer>
       </div>
     );
   }
