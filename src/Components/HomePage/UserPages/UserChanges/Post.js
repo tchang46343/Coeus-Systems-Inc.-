@@ -1,6 +1,7 @@
 import React from "react";
 import "./Post.css";
 //import UserNav from "./UserNav";
+import { API_BASE_URL } from "../../../../config";
 
 export default class PostData extends React.Component {
   constructor(props) {
@@ -8,6 +9,8 @@ export default class PostData extends React.Component {
     this.state = {
       vendor: " ",
       item_name: " ",
+      description: " ",
+      price: " ",
       availbility: " "
     };
   }
@@ -22,20 +25,30 @@ export default class PostData extends React.Component {
       item_name
     });
   }
+  descriptionChanged(description) {
+    this.setState({
+      description
+    });
+  }
+  priceChanged(price) {
+    this.setState({
+      price
+    });
+  }
   availabilityChanged(availbility) {
     this.setState({
       availbility
     });
   }
-  handleClick(e) {
-    e.preventDefault();
-    alert("Your new vendor has been added! Code(201)");
-  }
-  onSubmit(event) {
+  // handleClick(e) {
+  //   e.preventDefault();
+  //   alert("Your new vendor has been added! Code(201)");
+  // }
+  handleClick = event => {
     event.preventDefault();
-    const { vendor, item_name, availbility } = this.state;
-    const newVendor = { vendor, item_name, availbility };
-    const url = "https://coeus-system-inc.herokuapp.com/inventory";
+    const { vendor, item_name, description, price, availbility } = this.state;
+    const newVendor = { vendor, item_name, description, price, availbility };
+    const url = API_BASE_URL;
     // "https://coeus-system-inc.herokuapp.com/inventory";
     const options = {
       method: "POST",
@@ -57,6 +70,8 @@ export default class PostData extends React.Component {
         this.setState({
           vendor: " ",
           item_name: " ",
+          description: " ",
+          price: " ",
           availability: "Yes"
         });
         this.props.onSubmit(newVendor);
@@ -66,7 +81,7 @@ export default class PostData extends React.Component {
           error: err.message
         });
       });
-  }
+  };
   render() {
     return (
       <div className="GetContent">
@@ -81,7 +96,7 @@ export default class PostData extends React.Component {
             onChange={e => this.vendorChanged(e.target.value)}
           ></input>
 
-          <label className="item">Enter Part ID:</label>
+          <label className="itemID">Enter Part ID:</label>
           <input
             type="text"
             className="PostID"
@@ -91,7 +106,27 @@ export default class PostData extends React.Component {
             onChange={e => this.itemChanged(e.target.value)}
           ></input>
 
-          <label className="item">Available(Yes or No):</label>
+          <label className="descriptionTitle">Enter Part Description:</label>
+          <input
+            type="text"
+            className="PostDes"
+            placeholder="Shoe Shelf"
+            required
+            value={this.state.description}
+            onChange={e => this.descriptionChanged(e.target.value)}
+          ></input>
+
+          <label className="PriceTitle">Enter Price:</label>
+          <input
+            type="text"
+            className="PostPrice"
+            placeholder="$12.50"
+            required
+            value={this.state.price}
+            onChange={e => this.priceChanged(e.target.value)}
+          ></input>
+
+          <label className="itemAvail">Available(Yes or No):</label>
           <input
             type="string"
             className="PostQtyAvail"

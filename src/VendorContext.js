@@ -1,4 +1,5 @@
 import React, { createContext, Component } from "react";
+import { API_BASE_URL } from "./config";
 
 export const VendorContext = createContext();
 
@@ -15,7 +16,7 @@ class VendorContextProvider extends Component {
   }
 
   componentDidMount() {
-    fetch("https://coeus-system-inc.herokuapp.com/inventory", {
+    fetch(API_BASE_URL, {
       headers: {
         "Content-Type": "application/json"
       }

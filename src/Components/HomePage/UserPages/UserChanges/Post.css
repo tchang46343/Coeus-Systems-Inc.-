@@ -19,6 +19,14 @@
   font-size: 16px;
   text-overflow: ellipsis;
 }
+.PostDes {
+  width: 175px;
+  font-weight: bold;
+}
+.PostPrice {
+  width: 175px;
+  font-weight: bold;
+}
 .PostQtyUnavail {
   display: inline-block;
   text-align: center;
@@ -51,6 +59,12 @@
   .PostID {
     width: 250px;
   }
+  .PostDes {
+    width: 250px;
+  }
+  .PostPrice {
+    width: 250px;
+  }
   .PostQtyUnavail {
     width: 250px;
   }
@@ -63,6 +77,13 @@
     width: 325px;
   }
   .PostID {
+    width: 325px;
+  }
+
+  .PostDes {
+    width: 325px;
+  }
+  .PostPrice {
     width: 325px;
   }
   .PostQtyUnavail {
