@@ -51,6 +51,10 @@ export default class GetData extends React.Component {
     console.log(itemsJSX);
     return (
       <div className="GetContent">
+        <link
+          href="https://fonts.googleapis.com/css?family=Patua+One&display=swap"
+          rel="stylesheet"
+        ></link>
         <form className="addNewPart" onSubmit={this.handleSubmit}>
           <label className="vendor">Vendor:</label>
           <input

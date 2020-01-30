@@ -1,5 +1,7 @@
 .NewUser {
   padding: 3% 0;
+  background-color: #ffd700;
+  box-shadow: 15px 15px 15px black;
 }
 .signup-form {
   display: flex;
@@ -23,8 +25,10 @@ input {
   width: 200px;
   height: 50px;
   font-size: 25px;
-  background-color: aqua;
   cursor: pointer;
+}
+.Submit_Request {
+  background-color: #ffd700;
 }
 
 @media screen and (min-width: 1200px) {

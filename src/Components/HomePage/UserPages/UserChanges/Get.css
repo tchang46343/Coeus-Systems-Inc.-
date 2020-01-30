@@ -6,22 +6,24 @@
 .vendor {
   display: inline;
   font-size: 25px;
+  font-family: "Patua One", cursive;
 }
 
 .VendorName {
   display: inline;
-  font-size: 25px;
+  font-size: 16px;
   text-align: center;
 }
 
 .item {
   display: inline;
   font-size: 25px;
+  font-family: "Patua One", cursive;
 }
 
 .PartId {
   display: inline;
-  font-size: 25px;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -31,9 +33,14 @@
   border: thin black;
   width: 200px;
   height: 50px;
-  background-color: bisque;
+  background-color: #ff9912;
   cursor: pointer;
   font-size: 25px;
+  font-family: "Patua One", cursive;
+}
+
+.Report:hover {
+  background-color: #ffd700;
 }
 
 footer {

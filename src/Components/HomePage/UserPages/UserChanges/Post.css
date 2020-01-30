@@ -1,11 +1,30 @@
 .vendorTitle {
   font-size: 16px;
+  font-family: "Patua One", cursive;
 }
 .addNewPart {
   display: flex;
   flex-direction: column;
   margin: 0 5px;
   text-align: center;
+}
+.itemID {
+  font-family: "Patua One", cursive;
+  font-size: 16px;
+}
+.descriptionTitle {
+  font-family: "Patua One", cursive;
+  font-size: 16px;
+}
+
+.PriceTitle {
+  font-family: "Patua One", cursive;
+  font-size: 16px;
+}
+
+.itemAvail {
+  font-family: "Patua One", cursive;
+  font-size: 16px;
 }
 .PostName {
   display: inline-block;

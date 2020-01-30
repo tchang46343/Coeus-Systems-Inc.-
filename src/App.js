@@ -10,6 +10,7 @@ import DeleteData from "./Components/HomePage/UserPages/UserChanges/Delete";
 import UpdateData from "./Components/HomePage/UserPages/UserChanges/Update";
 import Navbar from "./Components/HomePage/Navbar";
 import VendorContextProvider from "./VendorContext";
+import "./App.css";
 
 export default class HomePage extends React.Component {
   render() {

@@ -85,6 +85,10 @@ export default class PostData extends React.Component {
   render() {
     return (
       <div className="GetContent">
+        <link
+          href="https://fonts.googleapis.com/css?family=Patua+One&display=swap"
+          rel="stylesheet"
+        ></link>
         <form className="addNewPart" onSubmit={event => this.onSubmit(event)}>
           <label className="vendorTitle">Vendor:</label>
           <input

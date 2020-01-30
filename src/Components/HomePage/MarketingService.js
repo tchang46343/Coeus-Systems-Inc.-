@@ -22,14 +22,13 @@ export default class AdvertisingServices extends React.Component {
         </header>
         <form className="ServiceHook" onSubmit={event => this.onSubmit(event)}>
           <header>
-            <h3> Hassle Free Inventory Management!</h3>
+            <h3 className="grabberPitch"> Hassle Free Inventory Management!</h3>
           </header>
           <p>
-            Working with our customers we focus on specific category needs such
-            as order management, end-to-end tracking, warehouse managment, and
-            accounting.
+            Working with our customers, we focus on specific category needs such
+            as order management, end-to-end tracking, and warehouse managment.
           </p>
-          <p>
+          <p className="submitRequest">
             Learn more about how our services by contacting our Sales Team:
             <button> Request More Info </button>
           </p>
@@ -37,8 +36,8 @@ export default class AdvertisingServices extends React.Component {
         <section className="clients">
           <header>
             <h4>
-              Coeus System Inc has partnered with companies such as Acebook,
-              ittube, letFlix, grapple, and Ross Dress for Less.
+              Coeus System Inc is proud to work with companies such as Myspace,
+              YouTube, NetFlix, Apple, and Ross Dress for Less.
             </h4>
           </header>
         </section>
