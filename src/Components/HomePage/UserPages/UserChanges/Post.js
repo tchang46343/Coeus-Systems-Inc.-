@@ -7,11 +7,11 @@ export default class PostData extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      vendor: " ",
-      item_name: " ",
-      description: " ",
-      price: " ",
-      availbility: " "
+      vendor: "",
+      item_name: "",
+      description: "",
+      price: "",
+      availbility: ""
     };
   }
 
@@ -48,12 +48,14 @@ export default class PostData extends React.Component {
     event.preventDefault();
     const { vendor, item_name, description, price, availbility } = this.state;
     const newVendor = { vendor, item_name, description, price, availbility };
+    console.log(JSON.stringify(newVendor));
+
     const url = API_BASE_URL;
     // "https://coeus-system-inc.herokuapp.com/inventory";
     const options = {
       method: "POST",
       body: JSON.stringify(newVendor),
-      header: {
+      headers: {
         "Content-Type": "application/json"
       }
     };
@@ -74,7 +76,7 @@ export default class PostData extends React.Component {
           price: " ",
           availability: "Yes"
         });
-        this.props.onSubmit(newVendor);
+        // this.props.onSubmit(newVendor);
       })
       .catch(err => {
         this.setState({
