@@ -60,7 +60,7 @@ export default class PostData extends React.Component {
       }
     };
 
-    fetch("https://coeus-system-inc.herokuapp.com/inventory", options)
+    fetch(url, options)
       .then(res => {
         if (!res.ok) {
           throw new Error("Something went wrong, please try again.");
