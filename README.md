@@ -1,14 +1,18 @@
-The name of your app at the top of the file.
-
 **_Coeus SystemInc._**
-A link to your live app.
 
-To access the website click on [Coeus-System-Inc](https://coeus-app.tchang46343.now.sh/).
+To access the website click on:
+[Coeus-System-Inc](https://coeus-app.tchang46343.now.sh/).
 
-Documentation of your API.
+To understand the backend mechanics of the website click on [Coeus-System-Inc_API](https://github.com/tchang46343/coeus-api-backend.git).
 
-To understand the backend mechanic of the website click on [Coeus-System-Inc_API](https://github.com/tchang46343/coeus-api-backend.git).
+**Application screenshot break down**
+Home Page of Coeus System Inc:
+<img src="imageRef/Coeus%20Home%20Page.png" width="700" height="400" alt="HomePage">
+*The image above is the landing page for Coeus System Inc. For new customers all the information is front and center.
+*Each box describes about what services we can provide for new customer if they were to use our platform.
+*The page explain also who we currently have partnership with and how to get in contact with us.
+*Finally, for existing clients they can click on **Home** and get access straight to the database.
 
-Screenshot(s) of your app. This makes your app description much easier to understand.
 A summary section. This should have a concise explanation of what your app does. Try to frame this from the standpoint of what the user does, or what the app enables for the user.
+
 A section on the technology used.
