@@ -1,7 +1,7 @@
 # **_Coeus System Inc._**
 
 **Check-Out the website at:**
-[Coeus-System-Inc](https://coeus-system-inc-app.tchang46343.now.sh).
+[Coeus-System-Inc](https://coeus-app.tchang46343.now.sh/).
 
 For access to the API repo of Coeus System Inc. click on [Coeus-System-Inc_API](https://github.com/tchang46343/coeus-api-backend.git).
 
