@@ -79,7 +79,7 @@ export default class GetData extends React.Component {
         <header className="resultsTitle"> Results: </header>
         <ul className="Results">{itemsJSX}</ul>
         <footer className="content-info">
-          Created by Terrance Chang Copyright © 2019 All Rights Reserved
+          Created by Terrance Chang Copyright © 2020 All Rights Reserved
         </footer>
       </div>
     );

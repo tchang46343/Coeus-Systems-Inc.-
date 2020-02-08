@@ -10,7 +10,7 @@ export default class HomePage extends React.Component {
         <MarketingServices />
         <NewUser />
         <footer className="Legal">
-          Created by Terrance Chang Copyright © 2019 All Rights Reserved
+          Created by Terrance Chang Copyright © 2020 All Rights Reserved
         </footer>
       </div>
     );

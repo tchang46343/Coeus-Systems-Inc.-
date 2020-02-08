@@ -22,15 +22,29 @@ For access to the API repo of Coeus System Inc. click on [Coeus-System-Inc_API](
 
 - The image above is the data manipulation landing page for customers. Customers are allowed to view, add, delete, and update stored inventory item data.
 
-## Inventory Manipulation Changes
+## Data Manipulations:
 
-### Display Inventory Data:
+- ### Display Inventory Data:
 
 <img src="imageRef/RetrieveItemsv2.png" width="700" height="400" alt="Retrieve Data">
 
 - This screen shot demonstrates the ability for the application to retrieve customer data information about specific parts and vendors information.
 - As seen in the example customers can access specific data points in relations to their vendor.
 
-A summary section. This should have a concise explanation of what your app does. Try to frame this from the standpoint of what the user does, or what the app enables for the user.
+- ### Add Inventory Items:
 
-A section on the technology used.
+<img src="imageRef/postdata.png" width="700" height="400" alt="Retrieve Data">
+
+- This screen shot demonstrates the ability for the customer to post new inventory items to the database.
+- As seen in the example data was entered into the required fields and then the server sent a fetch request to POST the data.
+
+## Coeus System Inc Pitch Summary:
+
+As a result, the benefit of using Coeus System Inc is to provide a single point inventory management system. As an added benefit the application data exists in the cloud, which in turn lets the customers have complete visibility to their products. As the application continues to develop, new features can be added to suit the customer's needs such as statical analysis, low inventory level notifications, and forecasting growth.
+
+## Technology Languages Used:
+
+- HTML5
+- CSS3
+- Javascript
+- React

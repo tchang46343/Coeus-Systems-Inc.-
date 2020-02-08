@@ -31,7 +31,7 @@ export default class UpdateData extends React.Component {
           <button className="Update">Update</button>
         </form>
         <footer className="content-info">
-          Created by Terrance Chang Copyright © 2019 All Rights Reserved
+          Created by Terrance Chang Copyright © 2020 All Rights Reserved
         </footer>
       </div>
     );

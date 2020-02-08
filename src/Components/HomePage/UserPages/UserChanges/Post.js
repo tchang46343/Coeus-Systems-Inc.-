@@ -1,6 +1,5 @@
 import React from "react";
 import "./Post.css";
-//import UserNav from "./UserNav";
 import { API_BASE_URL } from "../../../../config";
 
 export default class PostData extends React.Component {
@@ -40,10 +39,7 @@ export default class PostData extends React.Component {
       availbility
     });
   }
-  // handleClick(e) {
-  //   e.preventDefault();
-  //   alert("Your new vendor has been added! Code(201)");
-  // }
+
   handleClick = event => {
     event.preventDefault();
     const { vendor, item_name, description, price, availbility } = this.state;
@@ -51,7 +47,6 @@ export default class PostData extends React.Component {
     console.log(JSON.stringify(newVendor));
 
     const url = API_BASE_URL;
-    // "https://coeus-system-inc.herokuapp.com/inventory";
     const options = {
       method: "POST",
       body: JSON.stringify(newVendor),
@@ -76,7 +71,6 @@ export default class PostData extends React.Component {
           price: " ",
           availability: "Yes"
         });
-        // this.props.onSubmit(newVendor);
       })
       .catch(err => {
         this.setState({
@@ -146,7 +140,7 @@ export default class PostData extends React.Component {
           </button>
         </form>
         <footer className="content-info">
-          Created by Terrance Chang Copyright © 2019 All Rights Reserved
+          Created by Terrance Chang Copyright © 2020 All Rights Reserved
         </footer>
       </div>
     );

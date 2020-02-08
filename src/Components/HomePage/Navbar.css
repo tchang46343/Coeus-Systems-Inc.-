@@ -1,7 +1,3 @@
-/* body {
-  margin: 0;
-  padding: 0;
-} */
 .MainTitle {
   display: inline-block;
   position: absolute;
@@ -38,10 +34,4 @@ a {
   margin-left: 80px;
   margin-top: -19px;
   text-align: left;
-}
-
-@media screen and (min-width: 700px) {
-  /* .naaaaa {
-    display: inline;
-  } */
 }

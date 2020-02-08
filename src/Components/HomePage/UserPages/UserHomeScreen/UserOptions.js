@@ -22,7 +22,7 @@ export default class UserOptions extends React.Component {
           Update Item
         </Link>
         <footer className="Legal">
-          Created by Terrance Chang Copyright © 2019 All Rights Reserved
+          Created by Terrance Chang Copyright © 2020 All Rights Reserved
         </footer>
       </div>
     );
