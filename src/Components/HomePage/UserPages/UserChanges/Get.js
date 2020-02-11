@@ -54,7 +54,7 @@ export default class GetData extends React.Component {
           href="https://fonts.googleapis.com/css?family=Patua+One&display=swap"
           rel="stylesheet"
         ></link>
-        <form className="addNewPart" onSubmit={this.handleSubmit}>
+        <form className="addNewPart">
           <label className="vendor">Vendor:</label>
           <input
             type="text"
@@ -73,7 +73,9 @@ export default class GetData extends React.Component {
             value={this.state.item_Name}
             onChange={e => this.ItemChanged(e.target.value)}
           ></input>
-          <button className="Report">Run Report</button>
+          <button className="Report" onClick={this.handleSubmit}>
+            Run Report
+          </button>
         </form>
         <header className="resultsTitle"> Results: </header>
         <ul className="Results">{itemsJSX}</ul>
