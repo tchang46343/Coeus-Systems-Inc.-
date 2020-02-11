@@ -23,7 +23,6 @@ class VendorContextProvider extends Component {
     })
       .then(response => response.json())
       .then(results => {
-        //console.log(results);
         this.setState({
           vendors: results
         });
