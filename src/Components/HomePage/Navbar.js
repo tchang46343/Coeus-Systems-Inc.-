@@ -14,10 +14,10 @@ export default class NavBar extends React.Component {
           <input type="checkbox" id="hamburger" />
           <ul className="navLinksForPages">
             <li>
-              <Link to="/">Coeus Webpage</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/userpage">Home</Link>
+              <Link to="/userpage">Modify Database</Link>
             </li>
           </ul>
         </nav>

@@ -44,7 +44,7 @@ export default class PostData extends React.Component {
     event.preventDefault();
     const { vendor, item_name, description, price, availbility } = this.state;
     const newVendor = { vendor, item_name, description, price, availbility };
-    console.log(JSON.stringify(newVendor));
+    //console.log(JSON.stringify(newVendor));
 
     const url = API_BASE_URL;
     const options = {

@@ -48,7 +48,6 @@ export default class GetData extends React.Component {
         );
       });
 
-    console.log(itemsJSX);
     return (
       <div className="GetContent">
         <link

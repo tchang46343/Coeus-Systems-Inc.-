@@ -5,7 +5,7 @@ export default class AdvertisingServices extends React.Component {
   onSubmit(event) {
     event.preventDefault();
     alert(
-      "Your request has been recieved! We will get back to you in 3 business."
+      "Your request has been received! We will get back to you in 3 business."
     );
   }
   render() {
@@ -15,7 +15,7 @@ export default class AdvertisingServices extends React.Component {
           <h1>Coeus System Inc.</h1>
           <h2>Intuitive, inventory management software for any business.</h2>
           <p>
-            Coeus provides a scalble and intuitive inventory management
+            Coeus provides a scalable and intuitive inventory management
             software.We priorize our customer demands, and build tools to help
             grow their business.
           </p>
