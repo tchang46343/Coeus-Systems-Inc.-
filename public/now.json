@@ -3,7 +3,7 @@
   "alias": "tchang46343-coeus-app",
   "name": "coeus-system-inc-app",
   "env": {
-    "REACT_APP_API_BASE_URL": "https://coeus-system-inc.herokuapp.com/"
+    "DATABASE_URL": "postgres://hpuxfhbwnlyajr:fc8ed54724697692cbf7126502af12f1edad12f915b76e61c287ef313d3ef0fd@ec2-174-129-254-217.compute-1.amazonaws.com:5432/dfr97p4mt924ob"
   },
   "routes": [
     { "handle": "filesystem" },
