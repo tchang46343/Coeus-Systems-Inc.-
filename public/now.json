@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "alias": "tchang46343-coeus-app",
   "name": "coeus-system-inc-app",
   "routes": [
     { "handle": "filesystem" },

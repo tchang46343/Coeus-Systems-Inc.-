@@ -7,6 +7,7 @@ export default class GetData extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      display: false,
       vendor: "",
       item_name: ""
     };
@@ -48,6 +49,8 @@ export default class GetData extends React.Component {
         );
       });
 
+    const itemsJSXRender = this.state.display ? itemsJSX : "";
+
     return (
       <div className="GetContent">
         <link
@@ -78,7 +81,7 @@ export default class GetData extends React.Component {
           </button>
         </form>
         <header className="resultsTitle"> Results: </header>
-        <ul className="Results">{itemsJSX}</ul>
+        <ul className="Results">{itemsJSXRender}</ul>
         <footer className="content-info">
           Created by Terrance Chang Copyright © 2020 All Rights Reserved
         </footer>
