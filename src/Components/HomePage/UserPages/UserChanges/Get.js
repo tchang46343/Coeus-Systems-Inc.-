@@ -34,7 +34,7 @@ export default class GetData extends React.Component {
 
   render() {
     const { vendor, item_name } = this.state;
-    console.log(this.context.vendors);
+    //console.log(this.context.vendors);
     const itemsJSX = this.context.vendors
       ? this.context.vendors
           .filter(item => {
