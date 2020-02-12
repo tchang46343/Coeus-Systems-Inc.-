@@ -2,6 +2,9 @@
   "version": 2,
   "alias": "tchang46343-coeus-app",
   "name": "coeus-system-inc-app",
+  "env": {
+    "REACT_APP_API_BASE_URL": "https://coeus-system-inc.herokuapp.com/"
+  },
   "routes": [
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "/index.html" }
