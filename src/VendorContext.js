@@ -16,7 +16,7 @@ class VendorContextProvider extends Component {
   }
 
   componentDidMount() {
-    fetch(API_BASE_URL, {
+    fetch(`${API_BASE_URL}/inventory`, {
       headers: {
         "Content-Type": "application/json"
       }

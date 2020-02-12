@@ -27,27 +27,32 @@ export default class GetData extends React.Component {
   handleSubmit = e => {
     e.preventDefault();
     this.context.updateFilter(this.state.vendor, this.state.item_name);
+    this.setState({
+      display: true
+    });
   };
 
   render() {
     const { vendor, item_name } = this.state;
-
+    console.log(this.context.vendors);
     const itemsJSX = this.context.vendors
-      .filter(item => {
-        return (
-          item.vendor.toLowerCase() === vendor.toLowerCase() &&
-          item.item_name.toLowerCase() &&
-          item_name.toLowerCase()
-        );
-      })
-      .map((item, idx) => {
-        return (
-          <li key={idx} className="item">
-            <p className="item-vendor">{item.vendor}</p>
-            <p className="item-name">{item.item_name}</p>
-          </li>
-        );
-      });
+      ? this.context.vendors
+          .filter(item => {
+            return (
+              item.vendor.toLowerCase() === vendor.toLowerCase() &&
+              item.item_name.toLowerCase() &&
+              item_name.toLowerCase()
+            );
+          })
+          .map((item, idx) => {
+            return (
+              <li key={idx} className="item">
+                <p className="item-vendor">{item.vendor}</p>
+                <p className="item-name">{item.item_name}</p>
+              </li>
+            );
+          })
+      : "";
 
     const itemsJSXRender = this.state.display ? itemsJSX : "";
 
