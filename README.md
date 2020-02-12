@@ -5,6 +5,10 @@
 
 For access to the API repo of Coeus System Inc. click on [Coeus-System-Inc_API](https://github.com/tchang46343/coeus-api-backend.git).
 
+## Coeus System Inc Pitch Summary:
+
+As a result, the benefit of using Coeus System Inc is to provide a single point inventory management system. As an added benefit the application data exists in the cloud, which in turn lets the customers have complete visibility to their products. As the application continues to develop, new features can be added to suit the customer's needs such as statical analysis, low inventory level notifications, and forecasting growth.
+
 # **Application Screenshots**
 
 ## Home Page:
@@ -37,10 +41,6 @@ For access to the API repo of Coeus System Inc. click on [Coeus-System-Inc_API](
 
 - This screen shot demonstrates the ability for the customer to post new inventory items to the database.
 - As seen in the example data was entered into the required fields and then the server sent a fetch request to POST the data.
-
-## Coeus System Inc Pitch Summary:
-
-As a result, the benefit of using Coeus System Inc is to provide a single point inventory management system. As an added benefit the application data exists in the cloud, which in turn lets the customers have complete visibility to their products. As the application continues to develop, new features can be added to suit the customer's needs such as statical analysis, low inventory level notifications, and forecasting growth.
 
 ## Technology Languages Used:
 
