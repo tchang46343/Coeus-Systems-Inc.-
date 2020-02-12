@@ -1,0 +1,18 @@
+.userInstructions {
+  margin: 15px;
+  padding: 0;
+  background-color: #f7d19f;
+  border-radius: 5px;
+}
+
+.howToUse {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+.howToUseIntro {
+  padding-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
