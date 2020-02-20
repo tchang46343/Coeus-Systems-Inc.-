@@ -24,6 +24,7 @@
   list-style-type: none;
   background-color: aqua;
   padding: 0 25px;
+  white-space: nowrap;
 }
 a {
   text-decoration: none;
@@ -34,4 +35,9 @@ a {
   margin-left: 80px;
   margin-top: -19px;
   text-align: left;
+}
+.navOptionsAccess {
+  width: 120px;
+  text-decoration: underline;
+  padding: 10px;
 }

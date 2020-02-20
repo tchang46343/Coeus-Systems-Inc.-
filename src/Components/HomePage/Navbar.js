@@ -13,11 +13,23 @@ export default class NavBar extends React.Component {
           </label>
           <input type="checkbox" id="hamburger" />
           <ul className="navLinksForPages">
-            <li>
+            <li className="navOptionsAccess">
               <Link to="/">Home</Link>
             </li>
-            <li>
-              <Link to="/userpage">Modify Database</Link>
+            <li className="navOptionsAccess">
+              <Link to="/getdata">Review Part</Link>
+            </li>
+            <li className="navOptionsAccess">
+              <Link to="/postdata">Add New Part</Link>
+            </li>
+            <li className="navOptionsAccess">
+              <Link to="/deletedata">Delete Part</Link>
+            </li>
+            <li className="navOptionsAccess">
+              <Link to="/updatedata">Update Part</Link>
+            </li>
+            <li className="navOptionsAccess">
+              <Link to="/userpage">All Options</Link>
             </li>
           </ul>
         </nav>
