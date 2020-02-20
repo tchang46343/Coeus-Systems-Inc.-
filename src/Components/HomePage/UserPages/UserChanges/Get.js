@@ -34,7 +34,6 @@ export default class GetData extends React.Component {
 
   render() {
     const { vendor, item_name } = this.state;
-    //console.log(this.context.vendors);
     const itemsJSX = this.context.vendors
       ? this.context.vendors
           .filter(item => {
@@ -62,6 +61,11 @@ export default class GetData extends React.Component {
           href="https://fonts.googleapis.com/css?family=Patua+One&display=swap"
           rel="stylesheet"
         ></link>
+        <link
+          href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap"
+          rel="stylesheet"
+        ></link>
+        <header className="getTitleName"> Retrieve Part </header>
         <form className="addNewPart">
           <label className="vendor">Vendor:</label>
           <input

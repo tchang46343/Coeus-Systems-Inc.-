@@ -1,3 +1,12 @@
+.postTitleName {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+}
 .vendorTitle {
   font-size: 16px;
   font-family: "Patua One", cursive;
@@ -16,9 +25,24 @@
   font-family: "Patua One", cursive;
   font-size: 16px;
 }
+.PostDes {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 16px;
+}
 
 .PriceTitle {
   font-family: "Patua One", cursive;
+  font-size: 16px;
+}
+
+.PostPrice {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  text-align: center;
   font-size: 16px;
 }
 

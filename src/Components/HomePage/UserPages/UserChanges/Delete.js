@@ -5,9 +5,13 @@ export default class DeleteData extends React.Component {
   render() {
     return (
       <div className="DeleteContent">
+        <link
+          href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap"
+          rel="stylesheet"
+        ></link>
         <form className="DeleteData">
           <section className="vendorSection1">
-            <header className="titleDelete">Delete Item</header>
+            <header className="titleDelete">Delete Part</header>
             <label className="VendorDelete">Vendor:</label>
             <input
               type="text"

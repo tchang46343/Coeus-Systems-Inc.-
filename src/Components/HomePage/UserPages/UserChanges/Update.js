@@ -5,8 +5,13 @@ export default class UpdateData extends React.Component {
   render() {
     return (
       <div className="UpdateContent">
+        <link
+          href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap"
+          rel="stylesheet"
+        ></link>
+        <header className="updateTitleName"> Update Part </header>
         <form className="addNewPart">
-          <label id="vendor:">Vendor:</label>
+          <label className="vendorDelete">Vendor:</label>
           <input
             type="text"
             className="vendorName"

@@ -1,3 +1,6 @@
+.Name {
+  display: inline-block;
+}
 .NewUser {
   padding: 3% 0;
   background-color: #ffd700;
@@ -32,6 +35,11 @@ input {
 }
 
 @media screen and (min-width: 1200px) {
+  .Name {
+    display: block;
+    font-size: 25px;
+  }
+
   .UserEntry {
     margin: 10px 25%;
     font-size: 25px;
@@ -41,15 +49,15 @@ input {
 
 @media screen and (min-width: 600px) {
   .Name {
-    display: inline-block;
+    display: block;
     font-size: 25px;
   }
   .CompanyNumber {
-    display: inline-block;
+    display: block;
     font-size: 25px;
   }
   .Company {
-    display: inline-block;
+    display: block;
     font-size: 25px;
   }
   .UserEntry {

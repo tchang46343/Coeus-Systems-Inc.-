@@ -10,16 +10,16 @@ export default class UserOptions extends React.Component {
           rel="stylesheet"
         ></link>
         <Link to="/getdata" className="UserLink">
-          Retrieve Items
+          Retrieve Part
         </Link>
         <Link to="/postdata" className="UserLink">
-          Add Item
+          Add Part
         </Link>
         <Link to="/deletedata" className="UserLink">
-          Delete Item
+          Delete Part
         </Link>
         <Link to="/updatedata" className="UserLink">
-          Update Item
+          Update Part
         </Link>
         <footer className="Legal">
           Created by Terrance Chang Copyright © 2020 All Rights Reserved

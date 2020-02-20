@@ -7,7 +7,7 @@ import MarketingService from "./Components/HomePage/MarketingService";
 import Navbar from "./Components/HomePage/Navbar";
 import NewUser from "./Components/HomePage/NewUser";
 import HomeScreen from "./Components/HomePage/UserPages/UserHomeScreen/HomeScreen";
-//import GET from "./Components/HomePage//UserPages/UserChanges/Get";
+
 import DELETE from "./Components/HomePage/UserPages/UserChanges/Delete";
 import POST from "./Components/HomePage/UserPages/UserChanges/Post";
 import UPDATE from "./Components/HomePage/UserPages/UserChanges/Update";
@@ -75,18 +75,6 @@ it("Home screen renders without crashing", () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-// it("GET data renders without crashing", () => {
-//   const div = document.createElement("div");
-
-//   ReactDOM.render(
-//     <BrowserRouter>
-//       <GET />
-//     </BrowserRouter>,
-//     div
-//   );
-
-//   ReactDOM.unmountComponentAtNode(div);
-// });
 it("POST data renders without crashing", () => {
   const div = document.createElement("div");
 

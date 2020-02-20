@@ -46,7 +46,6 @@ export default class PostData extends React.Component {
     const newVendor = { vendor, item_name, description, price, availbility };
     //console.log(JSON.stringify(newVendor));
 
-    const url = API_BASE_URL;
     const options = {
       method: "POST",
       body: JSON.stringify(newVendor),
@@ -55,7 +54,7 @@ export default class PostData extends React.Component {
       }
     };
 
-    fetch(url, options)
+    fetch(`${API_BASE_URL}/inventory`, options)
       .then(res => {
         if (!res.ok) {
           throw new Error("Something went wrong, please try again.");
@@ -85,6 +84,11 @@ export default class PostData extends React.Component {
           href="https://fonts.googleapis.com/css?family=Patua+One&display=swap"
           rel="stylesheet"
         ></link>
+        <link
+          href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap"
+          rel="stylesheet"
+        ></link>
+        <header className="postTitleName"> Add New Part </header>
         <form className="addNewPart" onSubmit={event => this.onSubmit(event)}>
           <label className="vendorTitle">Vendor:</label>
           <input
@@ -136,7 +140,7 @@ export default class PostData extends React.Component {
             onChange={e => this.availabilityChanged(e.target.value)}
           ></input>
           <button className="PostButton" onClick={this.handleClick}>
-            POST
+            Add Part
           </button>
         </form>
         <footer className="content-info">
