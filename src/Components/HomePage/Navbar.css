@@ -30,7 +30,7 @@ a {
   text-decoration: none;
   color: black;
 }
-.WelcomeLogin input:hover ~ ul {
+.WelcomeLogin input:checked ~ ul {
   display: block;
   margin-left: 80px;
   margin-top: -19px;
