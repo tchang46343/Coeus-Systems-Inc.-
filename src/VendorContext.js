@@ -10,11 +10,14 @@ class VendorContextProvider extends Component {
       vendors: [],
       filter: {
         vendor: "",
-        item_Name: ""
+        item_Name: "",
+        description: "",
+        price: "",
+        availbility: ""
       }
     };
   }
-
+  //fetch(`${API_BASE_URL}/inventory`)
   componentDidMount() {
     fetch(`${API_BASE_URL}/inventory`)
       .then(response => response.json())
@@ -25,15 +28,26 @@ class VendorContextProvider extends Component {
       });
   }
 
-  updateFilter = (vendor, item_Name) => {
+  updateFilter = (vendor, item_Name, description, price, availbility) => {
     this.setState({
-      filter: { vendor, item_Name }
+      filter: { vendor, item_Name, description, price, availbility }
     });
   };
   render() {
-    const { vendors, filter } = this.state;
+    const {
+      vendors,
+      item_Name,
+      description,
+      price,
+      availbility,
+      filter
+    } = this.state;
     const value = {
       vendors,
+      item_Name,
+      description,
+      price,
+      availbility,
       filter,
       updateFilter: this.updateFilter
     };

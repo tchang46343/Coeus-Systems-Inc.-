@@ -2,6 +2,12 @@ import React from "react";
 import "./NewUser.css";
 
 export default class NewUser extends React.Component {
+  handleSubmit = e => {
+    e.preventDefault();
+    alert(
+      "Your information has been captured, a representative will get in contact soon!"
+    );
+  };
   render() {
     return (
       <div className="NewUser">
@@ -50,7 +56,11 @@ export default class NewUser extends React.Component {
               ></input>
             </label>
             <div className="Submit_Request">
-              <button type="submit" className="submitInfo">
+              <button
+                type="submit"
+                className="submitInfo"
+                onClick={this.handleSubmit}
+              >
                 Submit
               </button>
             </div>

@@ -48,6 +48,9 @@ export default class GetData extends React.Component {
               <li key={idx} className="item">
                 <p className="item-vendor">{item.vendor}</p>
                 <p className="item-name">{item.item_name}</p>
+                <p className="description">{item.description}</p>
+                <p className="price">{item.price}</p>
+                <p className="availbility">{item.availbility}</p>
               </li>
             );
           })

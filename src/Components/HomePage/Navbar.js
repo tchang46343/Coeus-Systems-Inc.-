@@ -14,7 +14,9 @@ export default class NavBar extends React.Component {
           <input type="checkbox" id="hamburger" />
           <ul className="navLinksForPages">
             <li className="navOptionsAccess">
-              <Link to="/">Home</Link>
+              <Link to="/" onClick={this.closeNavbar}>
+                Home
+              </Link>
             </li>
             <li className="navOptionsAccess">
               <Link to="/getdata">Review Part</Link>

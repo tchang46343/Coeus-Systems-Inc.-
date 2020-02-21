@@ -76,6 +76,7 @@ export default class PostData extends React.Component {
           error: err.message
         });
       });
+    alert("Your new part has been added to the database!");
   };
   render() {
     return (
@@ -122,7 +123,8 @@ export default class PostData extends React.Component {
 
           <label className="PriceTitle">Enter Price:</label>
           <input
-            type="text"
+            type="number"
+            step="0.01"
             className="PostPrice"
             placeholder="$12.50"
             required

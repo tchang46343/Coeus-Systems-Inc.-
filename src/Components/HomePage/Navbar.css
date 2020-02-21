@@ -30,11 +30,12 @@ a {
   text-decoration: none;
   color: black;
 }
-.WelcomeLogin input:checked ~ ul {
+.WelcomeLogin input:hover ~ ul {
   display: block;
   margin-left: 80px;
   margin-top: -19px;
   text-align: left;
+  transition-delay: 10s;
 }
 .navOptionsAccess {
   width: 120px;
