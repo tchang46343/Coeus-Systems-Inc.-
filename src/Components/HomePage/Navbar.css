@@ -19,7 +19,6 @@
   display: none;
 }
 .navLinksForPages {
-  display: none;
   position: absolute;
   list-style-type: none;
   background-color: aqua;

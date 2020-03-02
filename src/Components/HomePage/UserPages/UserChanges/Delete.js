@@ -1,80 +1,83 @@
 import React from "react";
 import "./Delete.css";
 import { VendorContext } from "../../../../VendorContext";
+import { API_BASE_URL } from "../../../../config";
 
 export default class DeleteData extends React.Component {
   static contextType = VendorContext;
   constructor(props) {
     super(props);
     this.state = {
-      display: true,
-      vendor: "",
-      item_name: "",
-      description: "",
-      price: "",
-      availbility: ""
+      id: [],
+      item_name: ""
     };
   }
 
+  itemChecked(id) {
+    console.log(id);
+    const newid = this.state.id;
+    newid.push(id);
+    this.setState({
+      id: newid
+    });
+  }
+
+  handleDelete = e => {
+    const id = this.state.id;
+    const options = {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      }
+    };
+    const idfilter = id.map(id => fetch(`${API_BASE_URL}/${id}`, options));
+    Promise.all(idfilter).then(res => {
+      for (res = 0; res < res.length; res++) {
+        if (!res.ok) {
+          throw new Error("Something went wrong, please try again.");
+        }
+        return;
+      }
+    });
+  };
+
   render() {
-    const { vendor, item_name } = this.state;
     const itemsJSX = this.context.vendors
-      ? this.context.vendors
-          .filter(item => {
-            return (
-              item.vendor.toLowerCase() === vendor.toLowerCase() &&
-              item.item_name.toLowerCase() &&
-              item_name.toLowerCase()
-            );
-          })
-          .map((item, idx) => {
-            return (
-              <li key={idx} className="item">
-                <p className="item-vendor">{item.vendor}</p>
-                <p className="item-name">{item.item_name}</p>
-                <p className="description">{item.description}</p>
-                <p className="price">{item.price}</p>
-                <p className="availbility">{item.availbility}</p>
-              </li>
-            );
-          })
+      ? this.context.vendors.map((item, idx) => {
+          return (
+            <li key={idx} className="itemDisplayed">
+              <input
+                type="checkbox"
+                className="trash"
+                onChange={e => this.itemChecked(item.id)}
+              ></input>
+              <p className="item-id">🗑 ID#: {item.id} </p>
+              <p className="item-vendor">Vendor: {item.vendor} </p>
+              <p className="item-name">Item Name: {item.item_name}</p>
+              <p className="description">Description: {item.description}</p>
+              <p className="price">Price: {item.price}</p>
+              <p className="availbility">Availbility: {item.availbility}</p>
+            </li>
+          );
+        })
       : "";
 
-    const itemsJSXRender = this.state.display ? itemsJSX : "";
+    const itemsJSXRender = itemsJSX;
+
     return (
       <div className="DeleteContent">
-        <link
-          href="https://fonts.googleapis.com/css?family=Merriweather:700&display=swap"
-          rel="stylesheet"
-        ></link>
-        {/* <form className="DeleteData">
-          <section className="vendorSection1">
-            <header className="titleDelete">Delete Part</header>
-            <label className="VendorDelete">Vendor:</label>
-            <input
-              type="text"
-              className="VendorDeleteName"
-              placeholder="Madix"
-              required
-              value={this.state.vendor}
-              onChange={e => this.vendorChanged(e.target.value)}
-            ></input>
-          </section>
-          <section className="vendorSection2">
-            <label className="DeleteItem">Part ID:</label>
-            <input
-              type="text"
-              className="DeletePartID"
-              placeholder="GT-413-10"
-              required
-            ></input>
-          </section>
+        <form onSubmit={this.handleDelete}>
+          <header className="resultsTitle">
+            {" "}
+            Choose a ID # to Delete. Then click the Delete button{" "}
+          </header>
 
-          <button className="DeleteButton">Delete</button>
-        </form> */}
+          <ul className="Results">{itemsJSXRender}</ul>
 
-        <header className="resultsTitle"> Results: </header>
-        <ul className="Results">{itemsJSXRender}</ul>
+          <div className="button-Container">
+            <button className="DeleteButton">Delete</button>
+          </div>
+        </form>
       </div>
     );
   }
