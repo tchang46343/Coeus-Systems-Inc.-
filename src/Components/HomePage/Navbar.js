@@ -36,9 +36,6 @@ export default class NavBar extends React.Component {
           <Link to="/deletedata">Delete Part</Link>
         </li>
         <li className="navOptionsAccess" onClick={this.closeNavBar}>
-          <Link to="/updatedata">Update Part</Link>
-        </li>
-        <li className="navOptionsAccess" onClick={this.closeNavBar}>
           <Link to="/userpage">All Options</Link>
         </li>
       </ul>

@@ -7,7 +7,7 @@ import NotFound from "./Components/HomePage/NotFoundPage";
 import GetData from "./Components/HomePage/UserPages/UserChanges/Get";
 import PostData from "./Components/HomePage/UserPages/UserChanges/Post";
 import DeleteData from "./Components/HomePage/UserPages/UserChanges/Delete";
-import UpdateData from "./Components/HomePage/UserPages/UserChanges/Update";
+
 import Navbar from "./Components/HomePage/Navbar";
 import VendorContextProvider from "./VendorContext";
 import "./App.css";
@@ -25,7 +25,6 @@ export default class HomePage extends React.Component {
             <Route exact path="/getdata" component={GetData} />
             <Route exact path="/postdata" component={PostData} />
             <Route exact path="/deletedata" component={DeleteData} />
-            <Route exact path="/updatedata" component={UpdateData} />
             <Route component={NotFound} />
           </Switch>
         </VendorContextProvider>

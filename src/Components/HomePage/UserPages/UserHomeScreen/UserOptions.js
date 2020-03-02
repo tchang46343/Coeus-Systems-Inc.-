@@ -18,9 +18,6 @@ export default class UserOptions extends React.Component {
         <Link to="/deletedata" className="UserLink">
           Delete Part
         </Link>
-        <Link to="/updatedata" className="UserLink">
-          Update Part
-        </Link>
         <footer className="Legal">
           Created by Terrance Chang Copyright © 2020 All Rights Reserved
         </footer>
