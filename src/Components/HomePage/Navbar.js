@@ -29,16 +29,16 @@ export default class NavBar extends React.Component {
         <li className="navOptionsAccess" onClick={this.closeNavBar}>
           <Link to="/getdata">Review Part</Link>
         </li>
-        <li className="navOptionsAccess">
+        <li className="navOptionsAccess" onClick={this.closeNavBar}>
           <Link to="/postdata">Add New Part</Link>
         </li>
-        <li className="navOptionsAccess">
+        <li className="navOptionsAccess" onClick={this.closeNavBar}>
           <Link to="/deletedata">Delete Part</Link>
         </li>
-        <li className="navOptionsAccess">
+        <li className="navOptionsAccess" onClick={this.closeNavBar}>
           <Link to="/updatedata">Update Part</Link>
         </li>
-        <li className="navOptionsAccess">
+        <li className="navOptionsAccess" onClick={this.closeNavBar}>
           <Link to="/userpage">All Options</Link>
         </li>
       </ul>
