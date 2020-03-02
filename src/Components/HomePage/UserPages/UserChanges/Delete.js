@@ -30,7 +30,9 @@ export default class DeleteData extends React.Component {
         "Content-Type": "application/json"
       }
     };
-    const idfilter = id.map(id => fetch(`${API_BASE_URL}/${id}`, options));
+    const idfilter = id.map(id =>
+      fetch(`${API_BASE_URL}/inventory/${id}`, options)
+    );
     Promise.all(idfilter).then(res => {
       for (res = 0; res < res.length; res++) {
         if (!res.ok) {
