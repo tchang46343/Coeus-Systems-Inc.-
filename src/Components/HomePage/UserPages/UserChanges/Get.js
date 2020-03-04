@@ -46,6 +46,7 @@ export default class GetData extends React.Component {
           .map((item, idx) => {
             return (
               <li key={idx} className="item">
+                <header className="results"> Results: </header>
                 <p className="item-vendor">{item.vendor}</p>
                 <p className="item-name">{item.item_name}</p>
                 <p className="description">{item.description}</p>
@@ -92,7 +93,7 @@ export default class GetData extends React.Component {
             Run Report
           </button>
         </form>
-        <header className="resultsTitle"> Results: </header>
+
         <ul className="Results">{itemsJSXRender}</ul>
         <footer className="content-info">
           Created by Terrance Chang Copyright © 2020 All Rights Reserved

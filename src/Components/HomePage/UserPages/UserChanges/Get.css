@@ -30,7 +30,9 @@
   font-size: 25px;
   font-family: "Patua One", cursive;
 }
-
+.availbility {
+  padding-bottom: 20px;
+}
 .PartId {
   display: inline;
   font-size: 16px;
@@ -61,11 +63,20 @@ footer {
   margin: 25px;
   padding: 25px;
 }
-.resultsTitle {
+.results {
   text-align: center;
+  padding-top: 20px;
+  font-size: 32px;
+  font-weight: bold;
 }
 .Results {
   text-align: center;
+  /* border: solid black; */
+  border-radius: 5px;
+  background-color: rgba(255, 153, 18, 0.8);
+  margin: 0 10%;
+  width: 80%;
+  padding-left: 0;
 }
 
 @media screen and (min-width: 700px) {
